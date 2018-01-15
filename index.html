@@ -8,27 +8,43 @@
 <body>
 <header>
     <div class="container">
-        <div class="logo">Sit <strong>on </strong>chair</div>
+        <div class="logo">Sit <span>on </span>chair</div>
         <nav>
-            <ul>
-                <li><a href="#">o firmie</a></li>
-                <li>galeria</li>
-                <li>kontakt</li>
+            <ul class="mainNav">
+                <li class="withDropDownMenu">
+                    <a href="#">o firmie</a>
+                    <ul class="dropDownMenu">
+                        <li class="drop-down"><a href="#">Aktualności</a></li>
+                        <li class="drop-down"><a href="#">Nasz team</a></li>
+                        <li class="drop-down"><a href="#">Historia</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">galeria</a></li>
+                <li><a href="#">kontakt</a></li>
             </ul>
         </nav>
     </div>
 </header>
-<section class="firstSection">
-    <div class="container">
+<section>
+    <div class="container firstSection">
         <div class="row">
             <div class="symbol left"><a href="#">&lt;</a></div>
             <div class="blackChair"></div>
             <div class="content">
-                <h1>sit <strong>on</strong> our <strong>chair</strong></h1>
+                <h1>sit <span>on</span> our <span>chair</span></h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Etiam sed magna sit amet mauris porta dignissim in et augue. Proin nunc mauris, ornare eget tellus nec, finibus dignissim lacus. Aenean vel ligula nec risus tempus finibus ut in nisi. </p>
-                <button>Zobacz więcej</button>
+                <button class="showMore">Zobacz więcej</button>
             </div>
             <div class="symbol right"><a href="#">&gt;</a></div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container secondSection">
+        <div class="row">
+            <div class="box firstPicture"></div>
+            <div class="box firstPicture"></div>
+            <div class="box content"></div>
         </div>
     </div>
 </section>
