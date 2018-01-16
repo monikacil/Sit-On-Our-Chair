@@ -1,4 +1,4 @@
-/*local fonts*/
+/*local fonts
 @font-face {
     font-family: 'ralewaybold';
     src: url('../fonts/raleway-bold.woff2') format('woff2'),
@@ -34,6 +34,8 @@
     font-weight: normal;
     font-style: normal;
 }
+*/
+
 /*CSS reset*/
 * {
     margin: 0;
@@ -42,7 +44,8 @@
 }
 /*main styles*/
 body{
-    font-family: 'ralewayregular', sans-serif;
+    /* font-family: 'ralewayregular', sans-serif; */
+    font-family: 'Raleway', sans-serif;
 }
 .container{
     width: 1470px;
@@ -68,7 +71,7 @@ header{
     letter-spacing: 1px;
 }
 span{
-    font-family: 'ralewayextrabold', sans-serif;
+    font-weight: 700;
     color: #1CCCA8;
 }
 nav{
@@ -167,8 +170,8 @@ li a:hover{
     background: linear-gradient(to bottom, rgba(254,254,254,1) 0%, rgba(230,234,237,1) 62%, rgba(217,217,217,1) 81%, rgba(205,208,209,1) 99%, rgba(205,208,209,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#cdd0d1', GradientType=0 );
 }
-.row{
-    height: 700px;
+.firstSection .container{
+    height: 680px;
     text-align: center;
 }
 .blackChair{
@@ -242,6 +245,7 @@ h1{
 /*second section*/
 .secondSection{
     background: white;
+    width: 100%;
 }
 
 .secondSection .row{
@@ -279,7 +283,7 @@ h1{
     left: 0;
 }
 h2{
-    width: 190px;
+    width: 200px;
     text-align: left;
     font-size:20px;
     line-height: 30px;
@@ -308,5 +312,52 @@ h2{
 }
 .chairName:hover{
     background-color: rgba(255,255,255, 0.6);
+    cursor: pointer;
+}
+/*price section*/
+
+.card{
+    width: 300px;
+    min-height: 311px;
+    border: 4px solid black;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+.whiteCircle{
+    width: 80px;
+    height: 80px;
+    border: 4px solid black;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top:-42px;
+    transform: translate(-50%,0);
+}
+.blackCircle{
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+.card header{
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+.card article{
+    margin-top: 40px;
+}
+.card footer{
+    width: 60%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 25px auto;
     cursor: pointer;
 }
