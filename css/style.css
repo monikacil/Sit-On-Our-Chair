@@ -156,7 +156,7 @@ li a:hover{
 
 /*styles - first section*/
 
-.firstSection {
+.firstSection, .secondSection {
     width: 100%;
     background: rgba(254,254,254,1);
     background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(230,234,237,1) 62%, rgba(217,217,217,1) 81%, rgba(205,208,209,1) 99%, rgba(205,208,209,1) 100%);
@@ -167,7 +167,7 @@ li a:hover{
     background: linear-gradient(to bottom, rgba(254,254,254,1) 0%, rgba(230,234,237,1) 62%, rgba(217,217,217,1) 81%, rgba(205,208,209,1) 99%, rgba(205,208,209,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#cdd0d1', GradientType=0 );
 }
-.firstSection .row{
+.row{
     height: 700px;
     text-align: center;
 }
@@ -182,7 +182,6 @@ li a:hover{
 }
 .firstSection .content{
     width: 49%;
-    height: 580px;
     margin-top: 185px;
     float: left;
 }
@@ -195,7 +194,7 @@ h1{
     letter-spacing: -0.5px;
     padding-right: 30px;
 }
-.content p{
+.mainDescription{
     text-align: center;
     line-height: 30px;
     font-size: 20px;
@@ -241,11 +240,73 @@ h1{
 }
 
 /*second section*/
+.secondSection{
+    background: white;
+}
 
+.secondSection .row{
+    height: 500px;
+}
 .box{
-    height: 100px;
-    width: 33%;
+    height: 305px;
+    width: 31.5%;
     display: inline-block;
-    background-color: #1CCCA8;
-
+    background-size: cover;
+    background-position: center;
+    margin-top: 35px;
+    position: relative;
+}
+.box:first-child{
+    margin-right: 32px;
+}
+.box:last-child{
+    margin-left: 32px;
+}
+.firstPicture{
+    background-image: url("../images/box1_img.jpg");
+}
+.secondPicture{
+    background-image: url("../images/box2_img.jpg");
+}
+.box .content {
+    box-sizing: content-box;
+    width: 100%;
+    height: 350px;
+    display: inline-block;
+    border: 1px solid #E3E3E3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+h2{
+    width: 190px;
+    text-align: left;
+    font-size:20px;
+    line-height: 30px;
+    border-bottom: 10px solid #1CCCA8;
+}
+.content h2{
+    margin: 35px 15px auto 30px;
+}
+.description{
+    text-align: left;
+    font-size: 18px;
+    line-height: 28px;
+    color: #4C4C4C;
+    margin: 18px 30px 27px 30px;
+}
+.chairName{
+    position: absolute;
+    top: 65%;
+    left: 1%;
+    background-color: rgba(255,255,255, 0.4);
+    width: 99%;
+    height: 88px;
+}
+.chairName h2{
+    margin: 20px auto 33px 15px;
+}
+.chairName:hover{
+    background-color: rgba(255,255,255, 0.6);
+    cursor: pointer;
 }
