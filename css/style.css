@@ -48,10 +48,13 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 .container{
-    width: 1470px;
+    width: 1300px;
     min-height: 53px;
     margin-left: auto;
     margin-right: auto;
+}
+.container::after{
+    clear: both;
 }
 
 /*styles for header*/
@@ -175,44 +178,49 @@ li a:hover{
     text-align: center;
 }
 .blackChair{
-    margin-top: 94px;
-    width: 35%;
-    height: 585px;
+    margin-top: 78px;
+    margin-left: 30px;
+    width: 37%;
+    height: 527px;
     background-size: cover;
     background-position: -168px 0;
     background-image: url("../images/black_chair.png");
     float: left;
 }
 .firstSection .content{
-    width: 49%;
-    margin-top: 185px;
+    width: 46%;
+    margin-top: 160px;
     float: left;
 }
 
 h1{
     text-transform: uppercase;
-    font-size: 58px;
+    font-size: 50px;
     font-weight: normal;
-    margin-bottom: 37px;
+    margin-bottom: 35px;
     letter-spacing: -0.5px;
-    padding-right: 30px;
+    padding-right: 89px;
 }
 .mainDescription{
     text-align: center;
-    line-height: 30px;
-    font-size: 20px;
-    padding:0 55px 0 50px;
+    line-height: 25px;
+    font-size: 16px;
+    padding-right: 80px;
+
 }
 .symbol{
-    width: 8%;
+    width: 7%;
     height: 580px;
     font-size: 100px;
     color: #1CCCA8;
-    padding-top: 290px;
+    padding-top: 250px;
 }
 .symbol a{
     text-decoration: none;
     color: #1CCCA8;
+}
+.symbol a:hover{
+    color: black;
 }
 .left{
     float: left;
@@ -228,18 +236,21 @@ h1{
 .showMore{
     margin-top: 39px;
     background-color: #1CCCA8;
-    width: 370px;
-    height: 70px;
+    width: 318px;
+    height: 65px;
     border: none;
     border-radius: 12px;
-    margin-right: 17px;
-    font-size: 33px;
+    margin-right: 70px;
+    font-size: 28px;
     color: white;
     text-transform: uppercase;
     cursor: pointer;
 }
 .showMore:hover{
     color: black;
+    -webkit-box-shadow: 0px 0px 7px -1px rgba(82,84,84,1);
+    -moz-box-shadow: 0px 0px 7px -1px rgba(82,84,84,1);
+    box-shadow: 0px 0px 7px -1px rgba(82,84,84,1);
 }
 
 /*second section*/
@@ -249,11 +260,11 @@ h1{
 }
 
 .secondSection .row{
-    height: 470px;
+    height: 425px;
 }
 .box{
-    height: 305px;
-    width: 31.5%;
+    height: 275px;
+    width: 31%;
     display: inline-block;
     background-size: cover;
     background-position: center;
@@ -261,10 +272,10 @@ h1{
     position: relative;
 }
 .box:first-child{
-    margin-right: 32px;
+    margin-right: 33px;
 }
 .box:last-child{
-    margin-left: 32px;
+    margin-left: 33px;
 }
 .firstPicture{
     background-image: url("../images/box1_img.jpg");
@@ -275,7 +286,7 @@ h1{
 .box .content {
     box-sizing: content-box;
     width: 100%;
-    height: 350px;
+    height: 305px;
     display: inline-block;
     border: 1px solid #E3E3E3;
     position: absolute;
@@ -283,21 +294,21 @@ h1{
     left: 0;
 }
 h2{
-    width: 200px;
+    width: 170px;
     text-align: left;
     font-size:20px;
     line-height: 30px;
     border-bottom: 10px solid #1CCCA8;
 }
 .content h2{
-    margin: 35px 15px auto 30px;
+    margin: 32px 15px auto 30px;
 }
 .description{
     text-align: left;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 26px;
     color: #4C4C4C;
-    margin: 18px 30px 27px 30px;
+    margin: 13px 30px 27px 30px;
 }
 .chairName{
     position: absolute;
@@ -322,22 +333,24 @@ h2{
 }
 .price-list{
     background-color: #F1F1F1;
+    height: 900px;
+
 }
 
-.pricer h2{
-    margin-bottom:100px;
-    padding-top: 72px;
-    font-size: 30px;
+.headerOfSection h2{
+    margin-bottom: 55px;
+    padding-top: 45px;
+    font-size: 26px;
     line-height: 40px;
     text-transform: uppercase;
     font-weight: 500;
-    width: 435px;
+    width: 382px;
 }
 
 .card{
     flex: auto;
     width: 31.5%;
-    height: 708px;
+    height:600px;
     border: 3px solid #D6D6D6;
     padding: 15px 2px;
     text-align: center;
@@ -352,8 +365,8 @@ h2{
     margin-left: 35px;
 }
 .bigCircle{
-    width: 76px;
-    height: 76px;
+    width: 67px;
+    height: 67px;
     border: 3px solid #D6D6D6;
     background-color: white;
     border-radius: 50%;
@@ -372,21 +385,21 @@ h2{
     left: 25%;
 }
 .cardHeader{
-    margin-top: 30px;
+    margin-top: 15px;
     text-transform: uppercase;
-    font-size: 33px;
+    font-size: 27px;
     font-weight: 500;
     color: #1CCCA8;
     background-color: #F7F7F7;
 }
 .card article{
-    margin-top: 20px;
+    margin-top: 11px;
 }
 
 .price{
     border: 3px solid #D6D6D6;
-    width: 172px;
-    height: 172px;
+    width: 156px;
+    height: 156px;
     border-radius: 50% 50%;
     margin-left: auto;
     margin-right: auto;
@@ -399,34 +412,34 @@ h2{
 }
 
 .price-inside-circle{
-    margin: 40px auto auto -30px;
-    font-size: 60px;
+    margin: 35px auto auto -13px;
+    font-size: 55px;
     line-height: 50px;
     position: relative;
 
 }
 .current{
-    margin-top: 15px;
-    font-size: 20px;
+    margin-top: 10px;
+    font-size: 18px;
 }
 sup{
-    font-size: 25px;
+    font-size: 20px;
     position: absolute;
     top: -20px;
 }
 .info{
     width: 100%;
-    margin-top: 45px;
+    margin-top: 35px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
 }
 .option{
     width: 100%;
-    height: 63px;
-    font-size: 31px;
+    height: 56px;
+    font-size: 28px;
     line-height: 33px;
-    padding-top: 17px;
+    padding-top: 14px;
     color: #8C8A8A;
 }
 .option:nth-of-type(2n+1){
@@ -458,7 +471,7 @@ sup{
 .card:hover .smallCircle{
     background-color: white;
 }
-.card:hover .join{
+.card:hover .joinButton{
     background-color: white;
     color: #1CCCA8;
 }
@@ -468,42 +481,135 @@ sup{
 .card:hover .option:nth-of-type(2n+2){
     background-color:#F1F1F1 ;
 }
-.join{
-    width: 167px;
+.cardFooter{
+    width: 100%;
+    margin: 34px auto;
+}
+
+.joinButton{
+    width: 146px;
     background-color: #1CCCA8;
     border-radius: 10px;
     color: white;
-    font-size: 25px;
+    font-size: 19px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 10px;
-    margin: 25px auto;
     cursor: pointer;
     position: absolute;
-    bottom: 10px;
-    left: 150px;
+    bottom: 17px;
+    left: 133px
 }
 
-.mainFooter .container{
+/*contact section*/
+
+.thirdSection .row{
+    height: 440px;
+}
+
+.form{
+    width: 60%;
+    float: left;
+}
+input {
+    display: block;
+    width: 762px;
+    height: 79px;
+    margin-bottom: 35px;
+    font-size: 30px;
+    border: 1px solid #1CCCA8;
+    border-radius: 2px;
+}
+input::placeholder{
+    color: #D7D7D7;
+    font-size: 40px;
+    padding-left: 20px;
+}
+.message{
+    height: 246px;
+}
+
+.submitDiv{
+    float: right;
+    width: 40%;
+
+}
+.redChair{
+    width: 310px;
+    height: 255px;
+    margin-left: 82px;
+
+    background-image: url("../images/red_chair.png");
+    background-size: cover;
+    background-position: center;
+}
+img{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #1CCCA8;
+    border-radius: 2px;
+    margin: 33px 0 -62px 58px;
+}
+img:hover{
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 7px -1px rgba(82,84,84,1);
+    -moz-box-shadow: 0px 0px 7px -1px rgba(82,84,84,1);
+    box-shadow: 0px 0px 7px -1px rgba(82,84,84,1);
+}
+.checkbox p{
+    font-size: 23px;
+    margin-left: 135px;
+}
+.submitButton{
+    width: 412px;
+    height: 88px;
+    margin: 40px 0 50px 57px;
+    background-color: #1CCCA8;
+    border: none;
+    border-radius: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+.submitButton:hover{
+    color: black;
+    -webkit-box-shadow: 0px 0px 7px -1px rgba(82,84,84,1);
+    -moz-box-shadow: 0px 0px 7px -1px rgba(82,84,84,1);
+    box-shadow: 0px 0px 7px -1px rgba(82,84,84,1);
+}
+
+/*footer*/
+
+.footerRow{
+    width: 100%;
+    margin-top: 100px;
     padding: 20px 0;
     color: #666666;
 
 }
 .copyright{
+    width: 50%;
     display: inline-block;
-    padding-top: 10px;
+    font-size: 20px;
+    color: #666666;
 }
 .social-links{
-    width: 240px;
+    width: 180px;
+    margin-left: 190px;
     display: inline-block;
-    margin-left: 700px;
 }
 .tail{
     width: 40px;
     height: 40px;
     background-size: cover;
     background-position: center;
+}
+.tail:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 .fr{
     background-image: url("../images/flickr.png");
@@ -522,8 +628,11 @@ sup{
     display: inline-block;
 }
 .mainFooter .logo{
+    width: 200px;
     color: #666666;
     font-weight: 500;
+    font-size: 23px;
     text-transform: uppercase;
     float: right;
+    display: inline-block;
 }
