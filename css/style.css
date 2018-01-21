@@ -187,6 +187,7 @@ li a:hover{
     background-image: url("../images/black_chair.png");
     float: left;
 }
+
 .firstSection .content{
     width: 46%;
     margin-top: 160px;
@@ -513,22 +514,25 @@ sup{
     width: 60%;
     float: left;
 }
-input {
+input, textarea {
     display: block;
     width: 762px;
     height: 79px;
     margin-bottom: 35px;
-    font-size: 30px;
+    font-size: 40px;
     border: 1px solid #1CCCA8;
     border-radius: 2px;
-}
-input::placeholder{
-    color: #D7D7D7;
-    font-size: 40px;
     padding-left: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+input::placeholder,textarea::placeholder{
+    color: #D7D7D7;
 }
 .message{
     height: 246px;
+    resize: none;
+    padding-top: 20px;
 }
 
 .submitDiv{
